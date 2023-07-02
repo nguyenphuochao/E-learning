@@ -219,6 +219,8 @@ section .thongke{
 section .thongke .items{
     display: flex;
     padding-top: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 section .thongke .items .item{
     width: 25%;
@@ -324,6 +326,13 @@ footer .copy{
     }
     section .courses >div>div.course{
         width: calc(50% - 37px);
+    }
+    section .thongke{
+        height: auto;
+    }
+    section .thongke .items .item{
+        width: 50%;
+        margin-bottom: 20px;
     }
     
 }
