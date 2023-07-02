@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.nav-top{
+    height: 46px;
+    background-color: #07294D;
+    color: white;
+    line-height: 46px;
+}
+.nav-mid{
+    height: 91px;
+}
+.nav-mid img{
+    max-width: 100%;
+    margin-top: 20px;
+}
+nav{
+    height: 59px;
+    background-color: #C4C4C4;
+}
+nav ul#menu li{
+    display: inline;
+}
+nav ul li a{
+    margin-right: 21px;
+    line-height:59px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+nav ul#menu-mobile{
+   display: none;
+   justify-content: space-between;
+}
+nav ul li a:hover{
+    color: rgb(231, 231, 11);
+}
+header{
+    background-image: url("../img/banner.png");
+    height: 656px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+}
+header .title{
+ padding-top:199px ;
+}
+header .title div:nth-child(1){
+    font-size: 40px;
+    margin-bottom: 31px;
+    color: #DAAB03
+}
+header .title div:nth-child(2){
+    font-size: 20px;
+     margin-bottom: 31px;
+}
+header .title div:nth-child(3){
+    font-size: 20px;
+    color: white;
+    background-color: #DAAB03;
+    display: inline-block;
+    padding: 18px 22px;
+    font-weight: 700;
+    margin-bottom: 90px;
+}
+header .title div:nth-child(4) ul{
+    text-align: center;
+
+}
+header .title div:nth-child(4) ul li{
+    display: inline-block;
+}
+header .title div:nth-child(4) ul li a{
+    width: 40px;
+    height: 2px;
+    display: inline-block;
+    background-color: rgb(177, 171, 171);
+}
+header .title div:nth-child(4) ul li.active a{
+    background-color: black;
+}
+/* section */
+
+/* question */
+section .question p:nth-child(1){
+    font-size: 40px;
+    text-align: center;
+    padding-top: 84px;
+}
+section .question p:nth-child(2){
+    font-size: 16px;
+    text-align: center;
+    padding-top: 26px;
+}
+section .question .items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 29px;
+    margin-left: -27px;
+}
+section .question .items div{
+    padding-top: 66px;
+    width: calc(33.33% - 27px);
+    text-align: center;
+    border: 2px solid rgb(206, 199, 199);
+    margin-left: 27px;
+    margin-bottom: 27px;
+    padding: 20px;
+    box-shadow: 2px -3px 2px rgb(237, 231, 231);
+}
+section .question .items div img{
+    background-color: #D3E2F2;
+    padding: 20px;
+    border-radius: 50%;
+
+}
+/* courses */
+section .courses h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 132px;
+}
+section .courses > p{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 27px;
+}
+section .courses >div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -37px;
+}
+section .courses >div>div.course{
+    width: calc(33.33% - 37px);
+    margin-left: 37px;
+}
+section .courses >div>div.course img{
+    margin-bottom: 32px;
+    max-width: 100%;
+}
+section .courses >div>div.course >h4{
+    margin-bottom: 16px;
+}
+section .courses >div>div.course>div{
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+}
+
+section .courses >div>div.course>div.user{
+        display: flex;
+        justify-content: space-between;
+}
+section .courses >div>div.course>div.user div:nth-child(2){
+    margin-left: -194px;
+    font-weight: bold;
+}
+section .courses >div>div.course>div.user div:last-child{
+    text-align: right;
+    color: #cfaa23;
+    font-weight: bold;
+    margin-right: 50px;
+}
+/* event */
+section .events{
+    margin-top: 162px;
+}
+section .events h2{
+    font-size: 40px;
+    text-align: center;
+}
+section .events p{
+    text-align: center;
+    margin-top: 19px;
+}
+section .events .items{
+    display: flex;
+    margin-top: 14px;
+    margin-left: -39px;
+}
+section .events .items div{
+    width: calc(33.33% - 39px);
+    margin-left: 39px;
+
+}
+section .events .items div img{
+    max-width: 100%;
+}
+section .events .items div h5{
+    font-size: 20px;
+    padding-top: 30px;
+}
+section .events .items div p{
+    color: #666;
+    text-align: left;
+}
+section .events .items div p#lich{
+    padding: 10px;
+}
+/* thống kê */
+section .thongke{
+    background-color: #0A3056;
+    height: 312px;
+    margin-top: 64px;
+    background-image: url('../img/review-bg.png');
+}
+section .thongke .items{
+    display: flex;
+    padding-top: 70px;
+}
+section .thongke .items .item{
+    width: 25%;
+    text-align: center;
+    justify-content: space-between;
+}
+section .thongke .items .item img{
+    max-width: 100%;
+}
+section .thongke .items .item #count{
+    margin-top: 23px;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+section .thongke .items .item #name{
+    color: white;
+    font-size: 20px;
+    padding-top: 11px;
+}
+section .blog{
+    margin-top: 87px;
+}
+section .blog h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+section .blog p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+section .blog .items{
+    display: flex;
+    margin-left: -47px;
+}
+section .blog .items div{
+    width: calc(33.33% - 47px);
+    margin-left: 47px;
+}
+section .blog .items div img{
+    max-width: 100%;
+}
+section .blog .items div h6{
+    margin-top: 27px;
+    font-size: 20px;
+    margin-bottom: 11px;
+}
+section .blog .items div p{
+    text-align: left;
+}
+footer{
+    margin-top: 57px;
+    background-color: blue;
+    color: white;
+    background-image: url('../img/footer-backgroud.png');
+}
+footer .items{
+    display: flex;
+    margin-bottom: 40px;
+    padding-top: 121px;
+}
+footer .items div{
+    width: 25%;
+}
+footer .items div h2{
+    font-size: 20px;
+}
+footer .items div ul{
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+footer .items div ul li{
+    margin-top: 10px;
+    list-style: circle;
+}
+footer .items div ul li::before{
+    content: "\2022";
+    color: #cfaa23;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+footer .items div ul li a{
+    color: white;
+}
+footer hr{
+    font-weight: bold;
+
+}
+footer .copy{
+    margin-top: 27px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+/* Responsive */
+@media screen and (max-width:960px) {
+    section .question .items div{
+        width: calc(50% - 27px);
+    }
+    section .courses >div>div.course{
+        width: calc(50% - 37px);
+    }
+    
+}
+@media screen and (max-width:768px) {
+    nav ul#menu{
+        display: none;
+    }
+    nav ul#menu li{
+        display: block;
+    }
+    nav{
+        background-color: #E6E5E0;
+        height: auto;
+        z-index: 999;
+    }
+    nav ul#menu li#home{
+        display: none;
+    }
+    nav ul#menu li:hover{
+        background-color: #cfaa23;
+        width: 100%;
+    }
+    nav ul#menu li a{
+        display: inline-block;
+        width: 100%;
+    }
+    nav ul#menu-mobile{
+        display: flex;
+        justify-content: space-between;
+     }
+    
+}
